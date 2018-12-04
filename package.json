@@ -18,10 +18,12 @@
   "homepage": "https://github.com/sshipsey/aoc2018#readme",
   "dependencies": {
     "lodash": "^4.17.11",
+    "moment": "^2.22.2",
     "ts-node": "^7.0.1"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.118",
+    "@types/moment": "^2.13.0",
     "@types/node": "^10.12.11",
     "ts-node-dev": "^1.0.0-pre.31"
   }

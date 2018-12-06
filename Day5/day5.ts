@@ -18,11 +18,11 @@ const part1 = (reaction: string) => {
   return reaction.length;
 };
 
-const part2 = (input: string) => {
+const part2 = (reaction: string) => {
   let minLen = Infinity;
   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
   for (let char of alphabet) {
-    const newPolymer = input
+    const newPolymer = reaction
       .split(char)
       .join('')
       .split(char.toUpperCase())

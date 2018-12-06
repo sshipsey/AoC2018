@@ -1,12 +1,11 @@
-import * as _ from 'lodash';
 import { promisify } from 'util';
 import { readFile } from 'fs';
 
 const part1 = (reaction: string) => {
   let idx = 1;
   while (idx < reaction.length) {
-    let currentChar = reaction[idx];
-    let previousChar = reaction[idx - 1];
+    const currentChar = reaction[idx];
+    const previousChar = reaction[idx - 1];
     if (reacts(currentChar, previousChar)) {
       reaction = reaction
         .slice(0, idx - 1)
